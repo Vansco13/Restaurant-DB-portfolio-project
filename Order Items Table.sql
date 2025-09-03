@@ -20,18 +20,19 @@ FROM dbo.order_details
 GROUP BY order_id
 ORDER BY no_of_items DESC
 
---To list all the orders that had more than 12 items
+--List the orders that had more than 12 items
 SELECT order_id,COUNT(item_id) AS no_of_items
 FROM dbo.order_details
 GROUP BY order_id
 HAVING COUNT(item_id) > 12
 ORDER BY no_of_items DESC
 
---To find the exact count of orders that had more than 12 items
-SELECT COUNT(*)
+--How many orders had more than 12 items (exact number)
+SELECT COUNT(*) AS orders_with_more_than_12_items
 FROM (
     SELECT order_id
     FROM dbo.order_details
     GROUP BY order_id
     HAVING COUNT(item_id) > 12
-) AS OrdersWithMoreThan12Items
+) AS subquery
+

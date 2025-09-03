@@ -26,7 +26,7 @@ SELECT  COUNT(*)item_name
 FROM dbo.menu_items
 WHERE category= 'American'
 GROUP BY category
-GROUP BY category
+
 
 --To find the most and least expensive Items in the menu
 SELECT item_name,FORMAT(price,'0.00') AS Formatted_Price
