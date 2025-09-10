@@ -37,12 +37,13 @@ ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
 WHERE [order_id]= 440
 
 --What category did they order the most from?
-SELECT [category], COUNT([item_id])
+SELECT [category], COUNT([item_id]) AS Items_ordered
 FROM [dbo].[order_details]
 LEFT JOIN [dbo].[menu_items]
 ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
 WHERE [order_id]= 440
 GROUP BY [category]
+ORDER BY Items_ordered DESC
 
 --View the details of the top 5 highest spend orders
 SELECT [order_id],[category],COUNT([item_id]) AS num_items
