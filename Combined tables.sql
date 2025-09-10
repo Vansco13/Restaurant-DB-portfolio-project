@@ -11,7 +11,9 @@ ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
 
 --What were the least and most ordered items? What category were they in?
 
-	SELECT [item_name],[category],COUNT([order_details_id]) AS num_purchases
+	SELECT [item_name],
+	[category],
+	COUNT([order_details_id]) AS num_purchases
 	FROM [dbo].[order_details]
 	LEFT JOIN [dbo].[menu_items]
 	ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
@@ -20,7 +22,7 @@ ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
 
 --What were the top 5 orders that spent the most money
 
-	SELECT TOP (5) [order_id],[category],SUM([price]) AS tot_spend
+	SELECT TOP (5) [order_id],[category],ROUND(SUM([price]),2) AS tot_spend
 	FROM [dbo].[order_details]
 	LEFT JOIN [dbo].[menu_items]
 	ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id

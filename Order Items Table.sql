@@ -2,7 +2,8 @@
 SELECT * FROM dbo.order_details
 
 --What is the number of total orders made
-SELECT COUNT(DISTINCT order_id) FROM dbo.order_details
+SELECT COUNT(DISTINCT order_id) AS Num_orders
+ FROM dbo.order_details
 
 --What is the date range of the table
 SELECT 
@@ -11,7 +12,7 @@ MAX(order_date) AS 'last order date'
 FROM dbo.order_details
 
 --How many items were ordered within this date range
-SELECT COUNT(*)
+SELECT COUNT(*) AS Total_no_of_ordered_items
 FROM dbo.order_details
 
 --Which orders had the most number of items

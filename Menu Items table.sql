@@ -1,6 +1,5 @@
 USE [Restaurant Db]
-UPDATE dbo.menu_items
-SET price = CAST(ROUND(price, 2) AS DECIMAL(10, 2));
+
 
 --To look at all the items in the menu
 SELECT * ,FORMAT(price,'0.00') AS  'Formatted Price'
@@ -50,7 +49,7 @@ FROM dbo.menu_items
 GROUP BY category
 
 --What is the average dish price within each category
-SELECT category,AVG(price) AS Average_price
+SELECT category,ROUND(AVG(price),2) AS Average_price
 FROM dbo.menu_items
 GROUP BY category
 ORDER BY Average_price DESC
