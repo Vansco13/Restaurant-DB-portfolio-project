@@ -11,16 +11,16 @@ This project analyzes customer purchase behavior for a restaurant chain, providi
 ---
 
 ##  Features
-- Order items table (Explores the various orders made over a specified time)
-- Menu items table (Explores the menu items and the various categories)
-- Combined tables (Customer transactions and order preferences)
+- Order items  (Explores the various orders made over a specified time)
+- Menu items  (Explores the menu items and the various categories)
+- Combined dataset (Customer transactions and order preferences)
 
 ---
 
 ##  Tech Stack
 - **SQL** for database queries
-- **DAX** for Power BI calculations
-- **Excel & Power BI** for visualization
+- **DAX** for Excel measures
+- **Excel & Tableau** for  data visualization
 
 
 ---
