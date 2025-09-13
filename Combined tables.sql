@@ -118,12 +118,12 @@ LEFT JOIN [dbo].[menu_items]
 ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
 
 
---Which category had the most orders?
+--Which category had the most items ordered?
 SELECT  category, COUNT(order_details_id) AS Num_items_ordered
 FROM [dbo].[order_details]
 LEFT JOIN [dbo].[menu_items]
 ON [dbo].[order_details].item_id=[dbo].[menu_items].menu_item_id
-WHERE category IS NOT NULL
+--WHERE category IS NOT NULL
 GROUP BY category
 ORDER BY Num_items_ordered DESC
 
