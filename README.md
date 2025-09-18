@@ -35,7 +35,7 @@ This project analyzes customer purchase behavior for a restaurant chain, providi
 
 ## 👤 Author
 **Evans [Waithaka]**    
-- GitHub: [[your link](https://github.com/Vansco13)]
+- GitHub: [[Vansco](https://github.com/Vansco13)]
 
 
 
