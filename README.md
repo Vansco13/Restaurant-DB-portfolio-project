@@ -1,12 +1,19 @@
 #  Restaurant DB Project
 
 
-In this project, I analyse a restaurant database to get insights into the customer behaviour.
-
+This is a SQL-based exploration of menu item perfomance and customer ordering behaviour.
 ---
 
 ##  Overview
-This project analyzes customer purchase behavior for a restaurant chain, providing insights into sales trends, customer preferences, and business performance.
+This project analyses a restaurant's menu and customer order data to uncover insights into sales perfomance, customer preferences, and ordering behaviour. The goal is to provide a data driven recommendation that can elp optimize menu offerings and increase revenue.
+
+---
+
+## Objectives
+- Identify best performing menu items by sales and revenue
+- Compare sales perfomance across categories.
+- Analyse customer ordering patterns over time
+- Calculate average order values to assess customer spending behaviour.
 
 ---
 
@@ -18,8 +25,7 @@ This project analyzes customer purchase behavior for a restaurant chain, providi
 ---
 
 ##  Tech Stack
-- **SQL** for database queries
-- **DAX** for Excel measures
+- **SQL** for data extraction, cleaning and analysis
 - **Excel & Tableau** for  data visualization
 
 
