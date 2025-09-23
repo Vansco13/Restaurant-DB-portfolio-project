@@ -41,7 +41,7 @@ This project analyses a restaurant's menu and customer order data to uncover ins
 
 ## 👤 Author
 **Evans [Waithaka]**    
-- GitHub: [[your link](https://github.com/Vansco13)]
+- GitHub: [[Vansco](https://github.com/Vansco13)]
 
 
 
