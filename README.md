@@ -1,4 +1,4 @@
-# : Restaurant Data Analysis Project
+# Restaurant Data Analysis Project
 
 ## Project Overview
 
