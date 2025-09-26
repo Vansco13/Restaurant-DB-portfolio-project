@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Project Title**: Restaurant Data Analysis Project
+**Project Title**: Restaurant Data Analysis Project.
 **Database**: `Restaurant DB`
 
 This is a SQL-based exploration of menu item perfomance and customer ordering behaviour.
